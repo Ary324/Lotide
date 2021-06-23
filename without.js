@@ -21,8 +21,6 @@ const without = function(source, itemsToRemove) {
   for (let i = 0; i < source.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) {
       if (itemsToRemove[j] === source[i]) {
-        console.log(itemsToRemove);
-        console.log(i);
         newArr.splice(i, 1);
       }
     }
