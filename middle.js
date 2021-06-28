@@ -1,34 +1,4 @@
-const eqArrays = function(arr1,arr2) {
-  let status = true;
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        status = false;
-      }
-    }
-  } else {
-    status = false;
-  }
-  return status;
-};
 
-const assertArraysEqual = function(arr1, arr2) {
-  let status = true;
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        status = false;
-      }
-    }
-  } else {
-    status = false;
-  }
-  if (status === true) {
-    console.log(`🙂🙂🙂Authentication Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🙁🙁🙁Authentication Failed: ${arr1} !== ${arr2}`);
-  }
-};
 
 const middle = function(arr1) {
   let outputArray = [];
@@ -52,8 +22,4 @@ const middle = function(arr1) {
   }
 };
 
-//Test Code
-
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-console.log(middle([1,2,3]));
-console.log(middle([3,7,4,3]));
+module.exports = middle;
